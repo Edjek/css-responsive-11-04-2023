@@ -1,4 +1,4 @@
-<--! documentaion -->
+<--! documentation -->
 https://devdocs.io/
 
 <--! créer une page en 4 minutes -->
