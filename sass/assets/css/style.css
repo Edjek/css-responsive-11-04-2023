@@ -1,45 +1,73 @@
-p {
-    font-size: 28px;
-    padding: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-h1 {
-    font-size: 28px;
-    padding: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    color: #333;
-    font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
 }
 
-h1 {
-    color: rgb(255, 0, 212);
-    border: 1px solid #000;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 30px;
-    margin-bottom: 50px;
-    color: red;
+a {
+  text-decoration: none;
+  color: #333;
 }
 
-p {
-    color: rgb(255, 0, 212);
-    border: 1px solid #000;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 30px;
-    margin-bottom: 50px;
-    color: red;
+.btn {
+  background-color: #3d6bc6;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 20px;
 }
-p strong {
-    background-color: blue;
-} /*# sourceMappingURL=style.css.map */
+.btn:hover {
+  background-color: #2f55a1;
+}
+
+header {
+  min-height: 65px;
+  padding: 0 80px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+header .logo {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  color: #3d6bc6;
+}
+header nav {
+  display: flex;
+  gap: 15px;
+}
+header nav a:hover {
+  color: #3d6bc6;
+}
+header .flags {
+  margin-left: auto;
+}
+header .flags img {
+  width: 35px;
+}
+
+.hero {
+  min-height: calc(100vh - 65px);
+  padding: 2em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(../img/hotel-3000.jpg);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  font-size: clamp(25px, 8vw, 35px);
+}
+.hero h1 {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

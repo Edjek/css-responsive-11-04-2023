@@ -1,7 +1,7 @@
 // Les mixins permettent d'insérer des bouts de code qui se répètent avec des paramètres personnalisables
 // On peut aussi créer des mixins sans paramètre mais on préfère utiliser les placeholders dans ces cas là
-@mixin title() {
-    font-size: 15px;
-    margin-bottom:30px;
+@mixin title($ft-size, $margin-bottom) {
+    font-size: $ft-size;
+    margin-bottom: $margin-bottom;
     color: red;
 }
