@@ -29,9 +29,9 @@ form:focus-within {
 }
 
 /* 7. sélectionnez le 4ème élément de la liste et donnez-lui un fond "seagreen" */
-/* ul li:nth-child(even) {
+ul li:nth-child(even) {
     background-color: seagreen;
-} */
+}
 
 /* 8. sélectionnez tous les li sauf le 5ème et donnez-leur un fond "midnightblue" */
 ul li:not(:nth-child(5)) {
