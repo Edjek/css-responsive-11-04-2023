@@ -59,7 +59,7 @@ header .flags img:nth-child(2) {
 
 .hero {
   padding: 2rem;
-  min-height: calc(100vh - 65px - 100px);
+  min-height: calc(100vh - 65px);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(../img/hotel-3000.jpg);
   background-size: cover;
   background-position: bottom;
@@ -101,7 +101,7 @@ header .flags img:nth-child(2) {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 .card img {
   width: 10rem;
