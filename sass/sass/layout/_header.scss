@@ -19,9 +19,11 @@ header {
     }
     .flags {
         margin-left: auto;
-    }
-    .flags img {
-        width: 35px;
+        img {
+            width: 35px;
+        }
+        img:nth-child(2) {
+            margin-left: 15px;
+        }
     }
 }
-

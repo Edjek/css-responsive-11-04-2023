@@ -5,3 +5,8 @@
     margin-bottom: $margin-bottom;
     color: red;
 }
+
+@mixin section($padding, $min-height){
+    padding: $padding;
+    min-height: $min-height;
+}
