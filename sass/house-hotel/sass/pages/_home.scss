@@ -1,6 +1,6 @@
 // SECTION HERO
 .hero {
-    @include section(2rem, calc(100vh - 65px - 100px));
+    @include section(2rem, calc(100vh - 65px));
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
         url(../img/hotel-3000.jpg);
     background-size: cover;
@@ -47,7 +47,8 @@
     justify-content: space-between;
 
     // On utilise ici, notre fonction double()
-    border-radius: double(10) + px;
+    // border-radius: double(10) + px;
+    border-radius: 5px;
     img {
         width: 10rem;
         height: 10rem;
