@@ -22,15 +22,25 @@ a {
     color: var(--cl-text);
 }
 
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
 .link {
-    color: rgb(139, 5, 28);
+    color: #222;
     transition: 0.3s;
 }
 
 .link:hover {
-    color: blue;
+    color: rgb(43, 114, 236);
 }
 
+/* CONTAINER */
 .container {
     width: 100px;
     height: 100px;
@@ -41,28 +51,28 @@ a {
 .container:hover {
     width: 200px;
     height: 300px;
-    background-color: blue;
+    background-color: rgb(234, 28, 200);
 }
 
+/* CONTAINER 2 */
 .container-2 {
     width: 100px;
     height: 100px;
     background-color: pink;
-    margin: 50px auto;
-    opacity: 0.1;
+    opacity: 0.3;
     transition: transform 3s, opacity 1s 3s;
 }
 
 .container-2:hover {
-    transform: scaleY(2) translateX(10px) rotate(360deg);
+    transform: translateX(50px) rotate(360deg) scaleY(2);
     opacity: 1;
 }
 
+/* CONTAINER 3 */
 .container-3 {
     width: 100px;
     height: 100px;
-    background-color: green;
-    margin: 50px auto;
+    background-color: rgb(56, 88, 56);
     transition: transform 1s 1s, width 1s, height 1s 2s;
 }
 
@@ -72,6 +82,7 @@ a {
     height: 200px;
 }
 
+/* CONTAINER 4 */
 .container-4 {
     width: 100px;
     height: 100px;
@@ -88,19 +99,20 @@ a {
     transform: translateX(500px);
 }
 
+/* CONTAINER 5 */
 .container-5 {
     height: 200px;
     width: 350px;
-    background-color: pink;
+    padding: 20px;
+    background-color: rgb(246, 241, 210);
     margin: auto;
     overflow: hidden;
-    animation: moove 2s;
 }
 
 p {
     transform: translateY(200px);
     opacity: 0;
-    transition: transform 1s, opacity;
+    transition: 1s;
 }
 
 .container-5:hover p {
@@ -108,14 +120,13 @@ p {
     opacity: 1;
 }
 
+/* CONTAINER 6 */
 .container-6 {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #333;
-    margin: 50px auto;
-    animation: moove 2s 1s infinite alternate
-        cubic-bezier(0.18, 1.91, 0.84, 1.24);
+    background-color: #525ce9;
+    animation: moove 2s 1s infinite alternate linear;
 }
 
 @keyframes moove {
@@ -124,14 +135,16 @@ p {
     }
 
     100% {
-        transform: translate(100px);
+        transform: translate(300px);
     }
 }
 
+/* CONTAINER 7 */
 .container-7 {
     display: flex;
     gap: 30px;
 }
+
 .circle {
     width: 50px;
     height: 50px;
@@ -140,9 +153,8 @@ p {
     animation: jump 0.5s infinite alternate ease-in;
 }
 
-.circle:nth-child(2){
+.circle:nth-child(2) {
     animation: jump 0.5s 0.25s infinite alternate ease-in;
-
 }
 
 @keyframes jump {
@@ -152,6 +164,15 @@ p {
     to {
         transform: translateY(100px);
     }
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 200px;
 }
 
 .card {
@@ -169,30 +190,20 @@ p {
 
 .card-big {
     width: 250px;
-    transform: rotate(10deg);
-    position: absolute;
-    z-index: 1;
+    transform: rotate(8deg);
 }
 
-.card-small{
+.card-small {
     width: 100px;
-    transform: rotate(-10deg);
+    transform: rotate(-8deg);
+    position: absolute;
+    z-index: -1;
 }
 
-.cards {
-    background-color: pink;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 200px;
+.cards:hover .card-big {
+    transform: translate(100px, -50px) rotate(20deg);
 }
 
-.cards:hover .card-big{
-    transform:  translate(100px, -100px) rotate(15deg);
-    
-}
-
-.cards:hover .card-small{
-    transform:  translate(-100px, -100px)  rotate(-15deg);
+.cards:hover .card-small {
+    transform: translate(-100px, -50px) rotate(-20deg);
 }
