@@ -1,6 +1,6 @@
 /* Déclaration de variables en CSS */
-:root{
-    --main-cl: rgb(47, 92, 19);
+:root {
+    --main-cl: rgb(57, 137, 227);
     --txt-cl: #333;
 }
 
@@ -16,18 +16,18 @@ body {
     color: var(--txt-cl);
 }
 
-a{
+a {
     color: var(--txt-cl);
     text-decoration: none;
 }
 
 h1 {
-    margin-bottom: 50px;
+    margin: 50px;
     text-align: center;
     color: var(--main-cl);
 }
 
-.btn  {
+.btn {
     padding: 10px 30px;
     border-radius: 5px;
     background-color: #fff;
